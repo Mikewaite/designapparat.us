@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Designapparat.us</title>
+
+    <link rel="stylesheet" href="css/masonry-example.css" media="screen" />    
+    <style media="screen">
+        .wrap { overflow: hidden;}
+    </style>
+
+    <script src="js/jquery-1.4.2.min.js"></script>
+    <script src="js/jquery.masonry.js"></script>
+	<script src="js/jquery.juice.popover.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            var 
+                speed = 1000,   // animation speed
+                $wall = $('#primary')
+            ;
+
+            $wall.masonry({
+                singleMode: false, 
+                // only apply masonry layout to visible elements
+                itemSelector: '.box:not(.invis)',
+                animate: true,
+                animationOptions: {
+                    duration: speed,
+                    queue: false
+                }
+            });
+
+			var selected = $(".all");	
+
+            $('#filtering-nav a').click(function(){
+				
+				
+				if($(this).attr("id") != selected.attr("id")){
+		
+					
+	                var colorClass = '.' + $(this).attr('class');
+	
+	                if(colorClass=='.all') {
+	                    // show all hidden boxes
+	                    $wall.children('.invis')
+	                        .toggleClass('invis').fadeIn(speed);
+	                } else {    
+	                    // hide visible boxes 
+	                    $wall.children().not(colorClass).not('.invis')
+	                        .toggleClass('invis').fadeOut(speed);
+	                    // show hidden boxes
+	                    $wall.children(colorClass+'.invis')
+	                        .toggleClass('invis').fadeIn(speed);
+	                }
+	
+								selected.removeClass("selected");
+	
+								$(this).addClass("selected");
+								selected = $(this);
+	
+					
+	
+	                $wall.masonry();
+	
+	                return false;
+				}
+
+            });
+			
+			
+			$('.box').each(function() {
+			$(this).find('a').popover({	  
+							type: 'gallery',
+							opacity: 0.85,
+							images: {
+							close: '/img/close.gif',
+							loading: '/img/loading.gif',
+							next: '/img/next.gif',
+							prev: '/img/prev.gif'
+							},
+							colour: '#111',
+							cancelColour: '#FFFFBE'
+							
+							
+						});
+			
+					});
+			});		
+				
+    </script>
+    
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-19280592-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+    
+    
+</head>
+<body>
+    
+	<div id="header">
+		<a id="logo" href="/">
+			<img title="Return to Cover" alt="Designapparatus" src="img/title_background.png"></img>
+		</a>
+	</div>	
+    
+    <ul id="filtering-nav" class="nav">
+        <li><a id="web" class="web" href="#web"><span>Websites</span></a></li>
+        <li><a id="apps" class="apps" href="#apps"><span>Apps</span></a></li>
+        <li><a id="ideas" class="ideas" href="#ideas"><span>Ideas</span></a></li>
+        <li><a id="all" class="all selected" href="#all"><span>See All</span></a></li>
+    </ul>
+
+    <div id="primary" class="wrap">
+    
+        	
+			
+			<div class="box col1 apps" id="gallery">  
+
+				<!-- CBS App - Silver Chalice-->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/cbs/cbsSports.png" title="The CBS Interactive college sports iPhone and Android app design has been used in over 30 college sports programs. Each app contains content for over 20 sports per school. ">
+				<img class="art" width="205" height="150" alt="" src="img/work/cbs/cbsSports_thumb.png"></a>
+
+				
+				<!-- Details -->
+
+				<h3>CBS Interactive - College Apps</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 apps" id="gallery">  
+
+				<!-- Raycom Tablet - Silver Chalice-->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/raycomTablet/raycomTablet.png" title="The tablet version of the Raycom Local TV app is more of a lean back and browse the news experience incorporating the latest news, weather and video content.">
+				<img class="art" width="205" height="150" alt="" src="img/work/raycomTablet/raycomTablet_thumb.png"></a>
+
+				
+				<!-- Details -->
+
+				<h3>Silver Chalice - Raycom iPad</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 apps" id="gallery">  
+
+				<!-- Raycom Phone - silver chalice-->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/raycom/raycomPhone.png" title="We launched 31 separate apps to provide local TV stations a reboot of their iPhone, Android and mobile web apps. Primarily a new reader, we included great features like interactive weather and advanced alerting.">
+				<img class="art" width="205" height="150" alt="" src="img/work/raycom/raycomPhone_thumb.png"></a>
+
+				
+				<!-- Details -->
+
+				<h3>Silver Chalice - Raycom Phone</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 apps" id="gallery">  
+
+				<!-- EMT ~ inspiring apps -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/emt/emt.png" title="Medics today require lots of paperwork to bill out to insurance companies. This app converts that process to an iPad, it includes medicine directories, patient information and all the forms and signature features needed.">
+				<img class="art" width="205" height="150" alt="" src="img/work/emt/emt_thumb.png"></a>
+
+				
+				<!-- Details -->
+
+				<h3>Inspiring Apps - PCR</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 apps" id="gallery">  
+
+				<!-- Goldman Sachs ~ Redi1 -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/workcrews/assign.png" title="Workcrews is the combination of an iPod and iPhone application that allows a working team to align job duties as well as keep track of working hours. Features include GPS tracking, scheduling and time tracking.">
+				<img class="art" width="205" height="150" alt="" src="img/work/workcrews/assign_thumb.png"></a>
+
+				<!-- Additional Images -->
+
+				<a href="img/work/workcrews/maps.png" title="The combination of Google Maps along with the GPS of the iPhone make a perfect combination to see the location of teams."></a>
+
+				<a href="img/work/workcrews/timeline.png" title="Reinventing the common schedualing view is no easy task, but with a touch screen you can put the entire schedule on a rail and touch to slide the dates left and right.">
+				<img class="art2" src="img/work/workcrews/assign.png"></a>
+
+				<!-- Details -->
+
+				<h3>Inspiring Apps - Workcrews</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 apps" id="gallery">  
+
+				<!-- Goldman Sachs ~ Redi1 -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/gs/redi1/redi1_big.png" title="Redi Plus is a stand alone application used by Goldman Sachs and their customers to compete in the trading world. Work on this project meant understanding fast pace trading needs along with creating a look that feels modern and premium.">
+				<img class="art" width="205" height="150" alt="" src="img/work/gs/redi1/redi1_thumb.png"></a>
+
+				<!-- Additional Images -->
+
+				<a href="img/work/gs/redi1/redi1_big2.png" title="Redi is made up of individual modules that all communicate with each other. The challenge becomes in understanding the needs of the particular module while keeping the design consistant throughout the application."></a>
+
+				<a href="img/work/gs/redi1/redi1_big3.png" title="Over time, it becomes increasingly more complex with so many modules that keeping various settings across the application is a challenge in itself.">
+				<img class="art2" src="img/work/gs/redi1/redi1_big3.png"></a>
+
+				<!-- Details -->
+
+				<h3>Goldman Sachs - REDI Plus</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 ideas" id="gallery">  
+
+				<!-- Betfair ~ concept work-->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/betfair/concept/bf_cricket.png" title="Betfair was interested in seeing what I can do with their gambling data. The main concept was to incorporate more visual thinking into the price and value of wagers. This information is available for betters today, but it is buried in historical only excel files. A savvy better can see patters in a betting market and take advantage of swings.">
+				<img class="art" width="205" height="150" alt="" src="img/work/betfair/concept/bf_thumb.png"></a>
+
+				<!-- Additional Images -->
+
+				<a href="img/work/betfair/concept/bf_video.png" title="There is an interesting trend in horse racing that adjusts the odds of horses throughout the race. In this example, I thought it would be good to mix a live video of the race with a scatterplot chart of the likelyhood of winning based on the odds and betting volume.">
+				<img class="art2" src="img/work/betfair/concept/bf_video.png"></a>
+
+				<a href="img/work/betfair/concept/bf_europe.png" title="Country distribution of bets is a very interesting point of focus for Betfair, they can focus advertising and isolate bets based on region.">
+				<img class="art2" src="img/work/betfair/concept/bf_europe.png"></a>
+
+				<a href="img/work/betfair/concept/bf_football.png" title="Football is the largest market for Betfair. The season starts with thousands of teams and divides into just a few as the year progresses. We can visualize this by denoting the probability of winning the season by the frequency and volume of bets.">
+				<img class="art2" src="img/work/betfair/concept/bf_football.png"></a>
+
+				<a href="img/work/betfair/concept/bf_embed.png" title="To adjust Betfair charting, I wanted to use a technique for isolating points in time like found on the video site Hulu.com.">
+				<img class="art2" src="img/work/betfair/concept/bf_embed.png"></a>
+
+				<!-- Details -->
+
+				<h3>Betfair - Proof of Concept</h3>            
+				<p>Pitch Work</p>
+
+			</div>
+			
+			<div class="box col1 web" id="gallery">  
+
+				<!-- Reuters - redesign -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/reuters/reuters_big.png" title="Reuters went through a giant redesign and I helped with the markets section of the site including some standard stock tools.">
+				<img class="art" width="205" height="150" alt="" src="img/work/reuters/reuters_thumb.png"></a>
+				
+				<!-- Additional Images -->
+
+				<a href="img/work/reuters/reuters_big2.png" title="Reuters really let us work with a lot of horizontal real estate which made for some crazy pages full of great information.">
+				<img class="art2" src="img/work/reuters/reuters_big2.png"></a>
+				
+				<!-- Details -->
+
+				<h3>Reuters - Redesign</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 apps" id="gallery">  
+
+			<!-- Betfair ~ American Idol -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/betfair/american_idol/american_idol_fullsize.png" title="Betfair is a European gambling site that can predict outcomes based on betting data. Shown here is a small widget for American Idol predictions.">
+			<img class="art" width="205" height="150" alt="" src="img/work/betfair/american_idol/BF_AmIdol_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/betfair/american_idol/american_idol_small.png" title="Visitors to the site were also able to pick an individual contestants widget as well.">
+			<img class="art2" src="img/work/betfair/american_idol/american_idol_small.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>Betfair - American Idol Rankings</h3>            
+			<p>Design & Direction</p>
+        
+		</div>
+			
+			<div class="box col1 web" id="gallery">  
+
+				<!-- Goldman Sachs - styleguide -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/rbc/rbc_big.png" title="RBC is one of Canada's leading banks.  They needed a site to reflect the vast amount of information available to their customers so a redesign was needed.">
+				<img class="art" width="205" height="150" alt="" src="img/work/rbc/rbc_thumb.png"></a>
+				
+				<!-- Additional Images -->
+
+				<a href="img/work/rbc/rbc_big2.png" title="In addition to research, RBC also shows industry ratings to help inform stock purchases.">
+				<img class="art2" src="img/work/rbc/rbc_big2.png"></a>
+				<a href="img/work/rbc/rbc_big3.png" title="RBC's design really boiled down to how extensible information can be when there is little knowledge of how people will navigate through a site.  It's important that anyone can get through the site that is most natural for them.">
+				<img class="art2" src="img/work/rbc/rbc_big3.png"></a>
+				
+				<!-- Details -->
+
+				<h3>RBC - Research</h3>            
+				<p>Design</p>
+
+			</div>
+			
+			<div class="box col1 web" id="gallery">  
+
+				<!-- GE @ Work -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/ge/work/atWork_big.png" title="As the homepage to the GE At Work site, it was challenging to find the right kind of images to convey the ideas and goals of such an admirable company as GE.">
+				<img class="art" width="205" height="150" alt="" src="img/work/ge/work/atWork_thumb.png"></a>
+				
+				<!-- Details -->
+
+				<h3>GE At Work - Homepage</h3>            
+				<p>Design</p>
+
+			</div>
+
+        	
+
+			<div class="box col1 web" id="gallery">  
+
+				<!-- Dow Jones design -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/DowJones/wsj_big2.png" title="I helped create The Dow Jones Advisor as an alternative to other news and information terminals. It's a modular site that has the upside of being able to link to real time financial data such as charts and informative tables.">
+				<img class="art" width="205" height="150" alt="" src="img/work/DowJones/wsj_thumb.png"></a>
+				
+				<!-- Additional Images -->
+
+				<a href="img/work/DowJones/wsj_big3.png" title="The use of charts is a main focus for the markets section of the site, they can be linked to other sites easily in an admin mode.">
+				<img class="art2" src="img/work/DowJones/wsj_big3.png"></a>
+				
+				<a href="img/work/DowJones/wsj_big4.png" title="Mutual fund information is also a big part of the site and it often overlooked by competitors.">
+				<img class="art2" src="img/work/DowJones/wsj_big4.png"></a>
+				
+				<!-- Details -->
+
+				<h3>Dow Jones Advisor - Terminal</h3>            
+				<p>Design</p>
+
+			</div>
+
+			<div class="box col1 web" id="gallery">  
+
+				<!-- CNN Money redesign -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/CNN_Money/CNN_Money_big.png" title="I helped with the CNN Money redesign, most of the pages were made more modern to compete against other more popular financial pages.">
+				<img class="art" width="205" height="150" alt="" src="img/work/CNN_Money/CNN_Money_thumb.png"></a>
+
+				<!-- Details -->
+
+				<h3>CNN Money - Redesign</h3>            
+				<p>Design</p>
+
+			</div>
+
+			<div class="box col1 web" id="gallery">  
+
+				<!-- CNBC - Advanced Chart -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/CNBC/advChart_big.png" title="The CNBC advanced charting page has a unique feature in that it overlays news video based on the stock in focus.">
+				<img class="art" width="205" height="150" alt="" src="img/work/CNBC/advChart_thumb.png"></a>
+
+				<!-- Details -->
+
+				<h3>CNBC - Advanced Charting</h3>            
+				<p>Design</p>
+
+			</div>	
+
+			<div class="box col1 web" id="gallery">  
+
+				<!-- BMO -->
+				<!-- Thumnail goes here -->
+
+				<a href="img/work/bmo/bmo_big.png" title="BMO Investorline is a repository for people to plan and investigate strategies for retirement. I helped with some redesign ideas.">
+				<img class="art" width="205" height="150" alt="" src="img/work/bmo/bmo_thumbs.png"></a>
+
+				<!-- Details -->
+
+				<h3>BMO - Web Design</h3>            
+				<p>Design</p>
+
+			</div>
+
+			
+		
+		<div class="box col1 ideas" id="gallery">  
+
+			<!-- CNN Money viz -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/CNN_Money/visualization/heatmap_big.png" title="CNN Money went through a redesign and as an opporutnity to create a new visualization, I made this heatmap that has a large form factor to not only work on a website, but could also work on the big board for TV.">
+			<img class="art" width="205" height="150" alt="" src="img/work/CNN_Money/visualization/heatmap_thumb.png"></a>
+			
+			
+			<!-- Details -->
+			
+			<h3>CNN Money - Heatmap</h3>            
+			<p>Pitch Work</p>
+        
+		</div>
+        
+		<div class="box col1 ideas" id="gallery">  
+
+			<!-- FXCM Ad concept-->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/fxcm/ad_big.png" title="FXCM is a leading currency trading site. This pitch was an ad to demonstrate live numbers and trading ideas in a flash ad.">
+			<img class="art" width="205" height="150" alt="" src="img/work//fxcm/ad_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/fxcm/ad_big2.png" title="Other ideas shown, trading ideas could be indicated on predictive success rate based on market conditions. Overall, the concept here is that the add is smarter than a normal add and even some research.">
+			<img class="art2" src="img/work/fxcm/ad_big2.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>FXCM - Advert</h3>            
+			<p>Pitch Work</p>
+        
+		</div>
+
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- CNBC ~ Screener -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/CNBC/screener_cnbc.png" title="Basic stock screener for CNBC.">
+			<img class="art" width="205" height="150" alt="" src="img/work/CNBC/screener_cnbc_thumb.png"></a>
+			
+			
+			<!-- Details -->
+			
+			<h3>CNBC - Stock Screener</h3>            
+			<p>Design</p>
+        
+		</div>
+		
+		
+		
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ FX-->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/fx/QuickStats_big.png" title="Redi Quick Stats is a simple read only module that lets currency traders know some vital statistics around trading for a period of time.  The flexibility of time and locations makes this module unique.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/fx/QuickStats_thumb.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>Goldman Sachs - Quick Stats</h3>            
+			<p>Design</p>
+        
+		</div>
+
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- Dow Jones ~ Screener -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/DowJones/matches_big.png" title="Stock screener for Dow Jones that was designed to work with news feeds for more timely stock results.">
+			<img class="art" width="205" height="150" alt="" src="img/work/DowJones/matches_thumb.png"></a>
+
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/DowJones/criteria_big.png" title="Criteria loads in page as a popover which increases usability time, unique for screeners at the time.">
+			<img class="art2" src="img/work/DowJones/criteria_big.png"></a>
+			<!-- Details -->
+			
+			<h3>Dow Jones - Screener</h3>            
+			<p>Design</p>
+        
+		</div>
+		
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ connection monitor-->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/fx/connectionMonitor_big.png" title="REDI Conneciton Monitor allows Goldman Sachs' IT team to isolate connection problems and reset connections for their clients. This was designed so that traders can also perform this action easily.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/fx/connectionMonitor_thumb.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>GS - Connection Monitor</h3>            
+			<p>Design</p>
+        
+		</div>
+        
+		<div class="box col1 ideas" id="gallery">  
+
+			<!-- GE ~ MyAccounts -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/hs/hs_big.png" title="I worked with Lindsay Moore to creat a simple animation for Goldman Sach's Hudson Street homepage.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/hs/hs_thumb.png"></a>
+			
+			
+			
+			<h3>Goldman Sachs - Hudson Street</h3>            
+			<p>Animation Concept</p>
+        
+		</div>
+
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- GE ~ MyAccounts -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/ge/home_big.png" title="MyAccount allows people to manage their commerical loans directly from GE.">
+			<img class="art" width="205" height="150" alt="" src="img/work/ge/home_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/ge/specificloan_big.png" title="With access to years of loan transactions, GE customers can better manage their money thanks to this web app.">
+			<img class="art2" src="img/work/ge/specificloan_big.png"></a>
+			<!-- Details -->
+			
+			<h3>GE - Loan Management</h3>            
+			<p>Design & Direction</p>
+        
+		</div>
+		
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ FX Toolkit-->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/fx/fx_toolkit_big.png" title="The Foreign Exchange Toolkit is a trading application not unlike REDI. It's the first of it's kind to be designed with a more vertical layout that conserves precious screen real estate. My involvement on this project was only in the planning and late design phases.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/fx/fx_toolkit_thumb.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>GS - FX Toolkit</h3>            
+			<p>Design</p>
+        
+		</div>
+		
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- GE ~ Loan Calculator -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/ge/calculator_big.png" title="The GE LIBOR calculator helps GE customers determine which duration of a loan to get based on a number of factors.">
+			<img class="art" width="205" height="150" alt="" src="img/work/ge/calculator_thumb.png"></a>
+			
+		
+			<!-- Details -->
+			
+			<h3>GE - LIBOR Calculator</h3>            
+			<p>Design & Direction</p>
+        
+		</div>
+    	
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ HUB-->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/hub/hub_big.png" title="The REDI Hub is a communication tool used to inform customers about special alerts, events and meetings that take place world wide within the Goldman Sachs ecosystem.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/hub/hub_thumb.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>Goldman Sachs - HUB</h3>            
+			<p>Design</p>
+        
+		</div>
+		
+		<div class="box col1 ideas" id="gallery">  
+
+			<!-- GE ~ MyAccounts -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/betfair/nyt/bf_nyt.png" title="Betfair worked with The New York Times to create these infographics about gambling in sports based on design research I did over a month of playing with betting data.">
+			<img class="art" width="205" height="150" alt="" src="img/work/betfair/nyt/bf_nyt_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/betfair/nyt/bf_nyt2.png" title="Betfair along with the New York Times recreated a chart showing the swings of betting during the Super Bowl.">
+			<img class="art2" src="img/work/betfair/nyt/bf_nyt2.png"></a>
+			<!-- Details -->
+			
+			<h3>Betfair - New York Times</h3>            
+			<p>Inspired Design</p>
+        
+		</div>
+		
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- Investors.com ~ widget -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/investors/home_big.png" title="Investors.com quick stock lookup widget. This widget was made for both mac and pc widget spaces.">
+			<img class="art" width="205" height="150" alt="" src="img/work/investors/home_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/investors/chart_big.png" title="Along with a watchlist and daily financial news, Investors' clients can look up stocks and get updated charting information.">
+			<img class="art2" src="img/work/investors/chart_big.png"></a>
+			<!-- Details -->
+			
+			<h3>Investors.com - Widget</h3>            
+			<p>Design & Direction</p>
+        
+		</div>
+
+       	<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ otis-->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/otis/otis_big.png" title="OTIS is an internal web app to Goldman Sach that allows it's employees to report and get refunded on travel expenses. The design and application flow was worked on closely with people who have to do most of this work manually though old excel documentation.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/otis/otis_thumbs.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>Goldman Sachs - OTIS</h3>            
+			<p>Design</p>
+        
+		</div>
+		
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Kapitall ~ Web App -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/kapitall/kapitall_big.png" title="Kapiall is a new way to think about trading stocks online. They are a brokerage who aims at attracting the video game generation.  I worked on this site for 6 months improving tools and workflow.">
+			<img class="art" width="205" height="150" alt="" src="img/work/kapitall/kapitall_thumb.png"></a>
+			
+			
+			<!-- Details -->
+			
+			<h3>Kapitall - Web App</h3>            
+			<p>Design</p>
+        
+		</div>
+		
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ Redi 2.0 -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/redi2/redi2_big.png" title="REDI 2 adds some more functionality onto the original REDI platform with a reconstructed back end and some small modifications to the design.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/redi2/redi2_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/gs/redi2/redi2_big2.png" title="Improvements were made, such as including helpful and common shortcuts based on selections.">
+			<img class="art2" src="img/work/gs/redi2/redi2_big2.png"></a>
+			
+			<a href="img/work/gs/redi2/redi2_big3.png" title="Charting and advanced controls for more complex trading interfaces have been designed with a more focused and customized layout. ">
+			<img class="art2" src="img/work/gs/redi2/redi2_big3.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>Goldman Sachs - REDI 2.0</h3>            
+			<p>Design</p>
+        
+		</div>
+	
+
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- NDR ~ Web App -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/ndr/NDR_big.png" title="Ned Davis Research supplies the best research to financial institutions. This tool allows customers to search on any number of variables using data that goes back as far as 1926.">
+			<img class="art" width="205" height="150" alt="" src="img/work/ndr/NDR_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/ndr/NDR_big2.png" title="A much needed landing page was created to inform customers about additions to the research and give them a sense of how many ways there are to view the vast amounts of research. ">
+			<img class="art2" src="img/work/ndr/NDR_big2.png"></a>
+			<!-- Details -->
+			
+			<h3>NDR - Web App</h3>            
+			<p>Design & Direction</p>
+        
+		</div>
+
+		<div class="box col1 apps" id="gallery">  
+
+			<!-- Goldman Sachs ~ Startpage -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/startpage/quicklaunch_big.png" title="Prime Brokerage wanted a repository for different branches of information. They needed something extensible and also customizable that doesn't break the design when permissions were limited. The design follows the form factor of igoolge and my yahoo pages.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/startpage/quicklaunch_thumb.png"></a>
+			
+			<!-- Additional Images -->
+			
+			<a href="img/work/gs/startpage/quicklaunch_big2.png" title="To add content to the startpage layout, I mimmicked an iPod like navigation that narrows down content types and ends with a preview of the content about to be added.">
+			<img class="art2" src="img/work/gs/startpage/quicklaunch_big2.png"></a>
+			
+			
+			<!-- Details -->
+			
+			<h3>Goldman Sachs - Startpage</h3>            
+			<p>Design & Direction</p>
+        
+		</div>
+		
+		<div class="box col1 ideas" id="web">  
+
+			<!-- QSG ~ ideas -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/qsg/qsg_big.png" title="QSG is a quantitive research group that calculates immense amounts of data into algos that help investors earn top dollar. This was a pitch for a redesign of their app/site.">
+			<img class="art" width="205" height="150" alt="" src="img/work/qsg/qsg_thumb.png"></a>
+			
+			
+			<!-- Details -->
+			
+			<h3>QSG - Concept</h3>            
+			<p>Pitch Work</p>
+        
+		</div>
+		
+        <div class="box col1 apps" id="gallery">  
+
+			<!-- TDI ~ Common Size -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/tdi/tdi_big.png" title="I helped work on the design of this TD Institutional tool that helps people find new ways to duplicate trades by using other simular trading criteria.">
+			<img class="art" width="205" height="150" alt="" src="img/work/tdi/tdi_thumb.png"></a>
+			
+			
+			<!-- Details -->
+			
+			<h3>TD Institutional - Web App</h3>            
+			<p>Design</p>
+        
+		</div>
+    
+        <div class="box col1 ideas" id="gallery">  
+
+			<!-- GE ~ MyAccounts -->
+			<!-- Thumnail goes here -->
+			
+			<a href="img/work/gs/research/research_big.png" title="Simple sliding content concept for research on an internal Goldman Sachs site. Probably would work best with a touch screen interface.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/research/research_thumb.png"></a>
+			
+			<!-- Details -->
+			
+			<h3>Goldman Sachs - Research</h3>            
+			<p>Concept</p>
+        
+		</div>
+
+		<div class="box col1 web" id="gallery">  
+
+			<!-- Goldman Sachs - styleguide -->
+			<!-- Thumnail goes here -->
+
+			<a href="img/work/ml/mlx_big.png" title="MLX is just another application to take advantage of financial data in a non-conventional way. It's modular interface should make it flexible to use for years.">
+			<img class="art" width="205" height="150" alt="" src="img/work/ml/mlx_thumb.png"></a>
+			
+			<!-- Details -->
+
+			<h3>Merrill Lynch - MLX</h3>            
+			<p>Design</p>
+
+		</div>
+		
+		<div class="box col1 web" id="gallery">  
+
+			<!-- Goldman Sachs - styleguide -->
+			<!-- Thumnail goes here -->
+
+			<a href="img/work/gs/style/style_big.png" title="Goldman Sachs has a powerful chart building tool and I helped create a style guide for their developers to build off of. This is just one example of countless style guides I've made for many applications.">
+			<img class="art" width="205" height="150" alt="" src="img/work/gs/style/style_thumb.png"></a>
+			
+			<!-- Additional Images -->
+
+			<a href="img/work/gs/style/style_big2.png" title="Instead of working off of a template, I like to make sure to deliver exactly what development teams need.">
+			<img class="art2" src="img/work/gs/style/style_big2.png"></a>
+			
+			<!-- Details -->
+
+			<h3>Goldman Sachs - Style Guide</h3>            
+			<p>Design</p>
+
+		</div>
+		
+
+       
+
+    </div> <!-- /.wrap -->
+
+	
+
+
+    <p id="footer">
+
+
+    <p>   Ka-boom
+    </p>
+
+</body>
+</html>

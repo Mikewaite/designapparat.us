@@ -1,0 +1,115 @@
+/* FONTS LIVE HERE ALONG WITH A FAMILY OF 4 AND A DOG. HE'S A CUTE DOG BUT SOMETIMES HE EATS POOP */
+
+@font-face {
+  font-family: 'Nexa-Black-Italic';
+  src: url(../font/Nexa-Black-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Bold-Italic';
+  src: url(../font/Nexa-Bold-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Bold';
+  src: url(../font/Nexa-Bold.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Book-Italic';
+  src: url(../font/Nexa-Book-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Book';
+  src: url(../font/Nexa-Book.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Heavy-Italic';
+  src: url(../font/Nexa-Heavy-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Light-Italic';
+  src: url(../font/Nexa-Light-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Light';
+  src: url(../font/Nexa-Light.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Regular-Italic';
+  src: url(../font/Nexa-Regular-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-Thin-Italic';
+  src: url(../font/Nexa-Thin-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-XBold-Italic';
+  src: url(../font/Nexa-XBold-Italic.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Nexa-XBold';
+  src: url(../font/Nexa-XBold.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'NexaBlack';
+  src: url(../font/NexaBlack.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'NexaHeavy';
+  src: url(../font/NexaHeavy.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'NexaRegular';
+  src: url(../font/NexaRegular.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'NexaThin';
+  src: url(../font/NexaThin.otf) format("opentype"); font-weight: lighter;
+}
+
+/*Avenir Next*/
+
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url(../font/AvenirNextLTPro-Regular.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Medium';
+  src: url(../font/AvenirNextLTPro-Medium.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'AvenirNext-MediumItalic';
+  src: url(../font/AvenirNextLTPro-MediumIt.otf) format("opentype"); font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Light';
+  src: url(../font/AvenirNextLTPro-UltLt.otf) format("opentype"); font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+

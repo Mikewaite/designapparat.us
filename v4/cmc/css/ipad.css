@@ -1,0 +1,542 @@
+/* CSS for portrait orientated iPhone */
+
+html {
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+}
+
+
+body {
+    overflow-x: hidden;
+	background-color: #ccc; /* Background color */
+    color: #666; /* Foreground color used for text */
+    font-family: Helvetica Neue;
+    font-size: 100%;
+	list-style-type: none;
+	text-decoration: none;
+    margin: 0; /* Amount of negative space around the outside of the body */
+    padding: 0; /* Amount of negative space around the inside of the body */
+	width: 100%;
+}
+
+/* fonts - begin */
+
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('Cabin-Regular-webfont.ttf') format('truetype'),
+         url('Cabin-Regular-webfont.svg#CabinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinBold';
+    src: url('Cabin-Bold-webfont.ttf') format('truetype'),
+         url('Cabin-Bold-webfont.svg#CabinSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 {
+	font-family: CabinRegular, Helvetica, sans-serif;
+	font-size: 1.333333333333333em; /* 16px / 12px */
+	font-weight: lighter;
+	text-shadow: 0.083333333333333em 0.083333333333333em #666;
+	line-height: 85%;
+	color: #fff;
+}
+
+h1 span {
+	font-family: CabinRegular, Helvetica, sans-serif;
+	font-size: 0.75em; /* 12px / 16px */
+	color: #fff;
+	font-weight: lighter;
+	font-variant: small-caps;
+		
+}
+
+h2 {
+	font-family: CabinBold, Helvetica, sans-serif;
+	font-size: 1.25em; /*15px / 12px */
+	font-weight: lighter;
+	color: #000;
+	line-height: 85%;
+}
+
+h2 span {
+	font-family: CabinRegular, Helvetica, sans-serif;
+	font-size: 0.866666666666667em; /* 13px / 15px */
+	color: #666;
+	font-weight: lighter;
+	font-variant: small-caps;
+}
+
+h3 {
+	font-family: CabinBold, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.166666666666667em; /* 14px / 12px */
+	color: #666;	
+	line-height: 85%;
+}
+
+h3 span {
+	font-family: CabinRegular, Helvetica, sans-serif;
+	font-size: 0.87514285714286em; /* 12px / 14px */
+	color: #666;
+	font-weight: lighter;
+	font-variant: small-caps;
+}
+
+h4 {
+	font-family: CabinBold, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.4166666666666667em;  /* 17px / 12px */
+	color: #333;	
+	line-height: 85%;
+}
+
+h4 span {
+	font-family: CabinRegular, Helvetica, sans-serif;
+	font-size: 0.82352941176471em;  /* 14px / 17px */
+	color: #7f7f7f;
+	font-weight: lighter;
+	font-variant: small-caps;
+}
+
+h4.detail  {	
+	font-family: CabinRegular, Helvetica, sans-serif;
+	position: relative;
+	line-height: 110%;
+	margin: 0;
+}
+
+
+
+h5 {
+	font-family: CabinRegular, Helvetica, sans-serif;
+	font-size: 0.833333333333333em;  /* 10px / 12px */
+	color: #777;
+	font-weight: lighter;
+}
+
+h6 {
+	font-family: CabinBold, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 1.166666666666667em; /* 14px / 12px */
+	color: 333;
+	text-shadow: 1px 1px #ddd;
+	font-variant: small-caps;
+}
+
+
+/* fonts - end */
+
+#page {
+	width: 320px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+/* header */
+
+#header {
+	height: 2.5em; /* just a guess, 42px */
+	width: 100%;  /* 320 / 320px */
+	background-image: -webkit-linear-gradient(bottom, #7d7d7d 0%, #adadad 100%);
+	border-bottom: 0.16666666666667em solid black;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+#logo {
+	width: 12.75%;
+	border-right: 1% solid gray;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 3.5%;
+	
+}
+
+#logo img {
+	width: 44px;
+	height: 20px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#global_dropdown {
+	border-left: 1px solid black;
+	float: right;
+	height: 42px;
+	width: 256px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+}
+
+#global_dropdown h1{
+	width: 221px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	position: relative;
+}
+
+#global_dropdown h1 img {
+	height: 8px;
+	float: right;
+	left: 10px;
+	width: 17px;
+	margin: 0;
+	padding: 0;
+	position: relative;	
+	display: inline;
+}
+
+/* end header */
+
+/*context bar */
+
+#context_bar {
+	height: 46px;
+	width: 320px;
+	background-color: #f6f6f6;
+	border-bottom: 2px solid #5ea7d9;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+#local_dropdown {
+	height: 42px;
+	width: 256px;
+	float: left;
+	border-right: 2px solid #5ea7d9;
+	position: relative;
+	margin: 0;
+	padding: 5px 0 0px 9px;
+}
+
+#local_dropdown h2 {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#local_dropdown h2 img {
+	height: 9px;
+	right: 10px;
+	width: 18px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;	
+	display: inline;
+}
+
+#btn_add {
+	float: right;
+	height: 48px;
+	width: 48px;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	position: relative;
+}
+
+#btn_add img {
+	height: 24px;
+	width: 24px;
+	margin: 0;
+	padding: 11px 0 0 9px;
+	position: relative;
+}
+
+/* End Context Bar */
+/* Start Status Bar */
+
+#status_bar {
+	width: 320px;
+	height: 42px;
+	background-color: #f4f3d7;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#status_bar ul {
+	width: 320px;
+	height: 42px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#status_bar ul li{
+	width: 19%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+}
+
+#status_bar ul li h3 {
+	text-align: right;	
+	width: 100%;
+	height: 30px;
+	position: relative;
+	margin: 0;
+	padding: 5px 0 0 9px ;
+	display: block;
+}
+
+/* end status bar */
+/* start menu list */
+
+#menu {
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#menu ul {
+	width: 320px; 
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#menu ul li {
+	width: 320px;
+	height: 64;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#menu ul li h4 {	
+	width: 311px;
+	height: 64px;
+	position: relative;
+	margin: 0;
+	padding: 10px 0 0 9px ;
+	display: block;
+	overflow: hidden;
+}
+
+#menu ul li.last {
+	border: none;
+	box-shadow: 0px 2px 2px #888888;
+}
+
+#menu ul li img {
+	float: right;
+	width: 10px;
+	height: 14px;
+	bottom: 5px;
+	margin: 0;
+	padding: 0 19px 0 0;
+	display: inline;
+	position: relative;
+}
+
+/* end menu list */
+/* start footer */
+
+#footer {
+	width: 320px;
+	height: 20px;
+	margin: 0;
+	padding-top: 5px;
+	position: relative;
+}
+
+#footer h5 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#footer h5 a {
+	text-decoration: underline;
+	color: #777;
+}
+
+/* end footer */
+
+/* start details page */
+
+#back {
+	width: 80px;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#back img {
+	width: 50px;
+	height: 30px;
+	position: relative;
+	margin: 0;
+	padding: 6px 0 6px 10px;
+}
+
+#page_title {
+	float: right;
+	height: 42px;
+	width: 240px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#page_title h1 {
+	width: 221px;
+	margin: 0;
+	padding: 12px 0 0 22px;
+	position: relative;
+}
+
+#details {
+	background-color: #bfced8;
+	width: 310px;
+	min-height: 80%;
+	margin: 0 0 -40px 0;
+	padding: 0 0 40px 10px;
+}
+
+#detail_menu {
+	width: 310px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#detail_menu h6 {
+	margin: 0;
+	padding: 10px 0 8px 0;
+	position: relative;
+
+}
+
+#detail_menu ul {
+	width: 310px; 
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#detail_menu ul li {
+	min-height: 64px;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#detail_menu h4 {
+	margin: 0;
+	padding: 6px 35px 15px 10px;
+}
+
+#detail_menu ul li img {
+	width: 10px;
+	height: 14px;
+	margin-left: -20px;
+	padding: 0 0 0 0;
+	position: absolute;
+	top: 42%;
+	left: 100%;
+	
+}
+
+#detail_menu ul li.last {
+	border: none;
+	box-shadow: 0px 2px 2px #888888;
+}
+
+/* end details page */
+
+/* start edit page */
+
+#cancel {
+	width: 80px;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#cancel img {
+	width: 61px;
+	height: 30px;
+	position: relative;
+	margin: 0;
+	padding: 6px 0 6px 10px;
+}
+
+
+#save {
+	width: 80px;
+	position: relative;
+	float: right;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#save img {
+	width: 61px;
+	height: 30px;
+	position: relative;
+	float: right;
+	margin: 0;
+	padding: 6px 10px 6px 0;
+}
+
+#edit_title h1 {
+	left: 100%;
+	top: 30%;
+	margin: 0 0 0 -65%;
+	padding: 0;
+	position: absolute;
+}
+
+#detail_menu ul.edit {
+	width: 300px; 
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,450 @@
+
+#page {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/* header */
+
+.masthead {
+	width: 100%;
+	height: 500px; /* 444px / 1739px the height of psd */
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+
+.masthead h2 {
+	margin-top: 0.6em;
+	font-size: 2.3em;
+	font-family: 'NexaRegular';
+}
+
+.masthead h1 {
+	font-size: 9em;
+	font-family: 'Nexa-XBold-Italic';
+	letter-spacing: -0.061em;
+}
+
+.title {
+	height: 72%;
+	margin: 0;
+	padding: 7em 0 0 0;
+	position: relative;
+	top: 0;
+	background: url(../img/arm.png) no-repeat 50% 2.5em;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: 4em;
+}
+
+/* SUB PAGES HEADER */
+
+.subhead {
+	height: 15em;
+}
+
+.subhead h1 {
+	display: inline;
+	font-size: 6em;
+}
+
+.subhead h2 {
+	display: none;
+}
+
+.subtitle {
+	height: 4em;
+	margin: 0;
+	padding: 20px 0 0 0;
+	position: relative;
+	background: none;
+}
+
+
+/* nav */
+
+nav {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 6em;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	color: #fff;	
+}
+
+nav ul {
+	width: 90%;
+	height: 1.9em;
+	margin: 1.1em 2.6em 0 2.6em;
+}
+
+nav ul {
+	color: #9d4050;
+}
+
+nav ul li {
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 5.5em;
+}
+
+a.index {
+	background: url(../img/rocket.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.3em 0 0 0;
+}
+
+a.index:hover {
+	background: url(../img/red_rocket.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.3em 0 0 0;
+}
+
+a.work {
+	background: url(../img/box.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.work:hover {
+	background: url(../img/red_box.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.about {
+	background: url(../img/robot.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.about:hover {
+	background: url(../img/red_robot.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.contact {
+	background: url(../img/tower.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: auto 3.4em;
+		padding: 4em 0 0 0;
+}
+
+a.contact:hover {
+	background: url(../img/red_tower.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: auto 3.4em;
+		padding: 4em 0 0 0;                               
+}
+
+nav ul li a {
+	font-family: 'Nexa-Xbold';
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+/* sub nav - even blacker */
+
+.subnav {
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 3em;
+	padding: 1.3em 0 1em 0;
+	clear: both;
+}
+	
+.current {
+		width: 25%;
+		margin: 0 3em 0 10%;
+}
+
+.nextpage {
+	float: right;
+	cursor: pointer;
+	height: inherit;
+	margin: 0.7em 10% 0 0;
+	padding: 0 1.3em 0 0;
+
+}		
+
+.previouspage {
+	display: inline;
+	float: right;
+	cursor: pointer;
+	height: inherit;
+	margin: 0.7em 0.5em 0 0;
+	padding: 0 1.3em 0 0;
+}
+
+.previouspage h2 {
+	padding: 0.18em 0 0 1.3em;
+	background: url(../img/left_arrow.png) no-repeat 0 0;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: auto 1.3em;
+}
+
+.previouspage h2:hover {
+	color: #9d4050;
+	background: url(../img/left_arrow_red.png) no-repeat 0 0;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: auto 1.3em;
+}
+
+/* oh hello there */
+
+#hello {
+	padding: 4em 10% 8em 10%;
+	height: auto;
+	width: 80%;
+	background-image: linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -o-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -moz-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -webkit-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -ms-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(234,225,217)),
+		color-stop(0.33, rgb(250,247,245)),
+		color-stop(0.89, rgb(255,255,255))
+	);	
+}
+
+#photo { 
+	display: inline;
+	float: left;
+	width: 15em;
+	margin: 0 4.3em 0 0;
+	padding: 15.5em 0 0 0;
+	background: url(../img/photo.png)no-repeat 50% 0;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: 14em auto;
+}
+
+.figcaption {
+	font-family: "Nexa-Book-Italic";
+	font-size: 1.1em;
+	color: #864a12;
+	line-height: 1.3em;
+	text-align: center;
+}
+
+#solve p {
+	font-size: 1.3em;
+}
+
+#hello h3 {
+	font-family: 'Nexa-Bold';
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	color: #864a12;
+}
+
+#hello p {
+	margin-bottom: 2em;
+}
+
+#hello ul {
+	width: 100%;
+}
+
+#hello ul li {
+	float: left;
+	width: 7em;
+	height: 1.5em;
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+
+#hello ul li a {
+	font-family: 'Nexa-Bold';
+	margin: 0 0 0 0;
+	padding-left: 3em;
+	line-height: 1.7em;
+	font-size: 1em;
+	color: #864a12;
+	text-transform: uppercase;
+}
+
+#hello ul li.Twitter a {
+	padding-left: 2.5em;
+}
+
+#hello ul li.email {
+	background: url(../img/email.png) center left no-repeat;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+}
+
+#hello ul li.Twitter {
+	background: url(../img/tweet.png) center left no-repeat;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+}
+
+/* latest */
+
+.home_latest p {
+	padding: 0 4em 0 0;
+}
+
+
+.football {
+	padding: 1em 0 0 19.5em;
+	height: 27em;
+	width: 60%;
+	background-color: white;
+	background: url(../img/football_full.png) no-repeat 0 0;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+    	background-size: contain;
+}
+
+
+/* Work Example */
+
+.work_description {
+	padding: 2em 10% 4em 5%; 
+	float: right;
+	width: 28%;
+	height: 100%;
+	background-image: linear-gradient(top, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -o-linear-gradient(top, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -moz-linear-gradient(top, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -webkit-linear-gradient(top, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -ms-linear-gradient(top, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgb(234,225,217)),
+		color-stop(0.33, rgb(250,247,245)),
+		color-stop(0.89, rgb(255,255,255))
+	);
+}
+
+.example {
+	width: 57%;
+}
+
+.example li {
+	padding: 2em 10% 2em 10%;
+}
+
+#clients {
+	padding: 0;
+	height: 14em;
+	width: 100%;
+	background: url(../img/clients.png) no-repeat 50% 0;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+}
+
+/* footer */
+
+#footer{
+	height: 20em;
+}
+
+#footer ul {
+	font-family: 'Nexa-Bold';
+	margin: 0 0 0 0;
+	width: 60%;
+	padding: 0;
+	font-size: 1em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#footer h1 {
+	display: inline;
+	font-size: 3em;
+	padding: 0 0 1em 0;
+	font-family: 'Nexa-XBold-Italic';
+	letter-spacing: -0.061em;
+}
+
+#footer ul li {
+	border: none;
+	line-height: 2em;
+}
+
+#footer ul li a {
+	display: block;
+	margin: 1.5em 0 0 0;
+	padding: 0.6em 0 0 4em;
+	background-position: 0;	
+}
+
+#footer ul li a.contact {
+	background-size: contain;
+}
+
+.top {
+	border-top: none;
+}
+
+.bottom {
+	border-bottom: none;
+}
+
+.footer_nav {
+	float: left;
+	margin: 0 2.5em 0 0;
+}
+
+#footer_extra {
+	display: inline;
+	width: 90%;
+}
+
+#footer_extra p {
+	margin: 5.35em 0 -4.5em 0em;
+	color: white;
+	width: 36em;
+}

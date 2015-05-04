@@ -1,0 +1,522 @@
+//SCSS Override Page
+
+//Mixin mix dubstep station ft.Kanye West
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 2600px) { @content; }
+  }
+  @if $point == uncle-bear {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (max-width: 1028px) { @content; }
+  }
+  @else if $point == auntie-bear {
+    @media (max-width: 992px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 767px)  { @content; }
+  }
+}
+
+//Helpers - Colors
+$white: #fefefe;
+$accent: #900;
+$dark: #0C161C;
+$light: #3B434D;
+$mid: #182732;
+
+
+//Helpers - Fonts
+h1 {
+	color: $white !important;
+	font-family: 'NexaThin', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 1em;
+}
+h2 {
+	color: $white;
+	font-family: 'NexaThin', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 1em;
+}
+h3 {
+	color: $white;
+	font-family: 'NexaThin', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 2em;
+}
+h4 {
+	color: $white;
+	font-family: 'AvenirNext-Regular', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 1.3em;
+}
+h5 {
+	color: $white;
+	font-family: 'AvenirNext-MediumItalic', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 1.14285714em;
+}
+p {
+	color: $white;
+	font-family: 'AvenirNext-Regular', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+//Helpers - Padding
+.padding-bottom-none {
+	padding-bottom: 0px;
+}
+.max-height {
+	height: 100% !important;
+}
+//Helpers - Margin
+.margin-bottom-none {
+	margin-bottom: 0px;
+}
+.margin-top {
+	margin-top: 30px;
+}
+
+//html
+html {
+	background-color: $light;
+}
+
+//Navigation stuffs
+.navbar {
+	background: $dark;
+	border: none;
+	border-radius: 0px;
+	padding: 0px 15px;
+	// padding: 1.78571429em;
+	top: 0;
+	width: 100%;
+	z-index: 9000;
+	@include breakpoint(baby-bear) {
+		padding: 0;
+	}
+	.navbar-brand {
+		background: url(../img/logo_arm.png) no-repeat 0 12px;
+		background-size: contain;
+		color: $white;
+		height: 50px;
+		margin-left: 10px;
+		margin-right: 30px;
+		width: 30%;
+		min-width: 200px;
+	}
+}
+.navbar-default .navbar-nav>li>a {
+	color: $white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: $accent;
+	color: $white;
+}
+.navbar-nav {
+	font-family: 'Nexa-Book';
+	li {
+		a {
+			font-size: 1.14285714em;
+		}	
+	}
+	@include breakpoint(baby-bear) { 
+		float: none;
+	}
+}
+
+
+//Jumbotron stuffs
+.jumbotron {
+	background: url(../img/blueprint.jpg) no-repeat 50% 50%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+		background-color: $dark;
+		text-align: center;
+	background-color: $dark;	
+	// height: 650px;
+	@include breakpoint(papa-bear) {
+		text-align: left;
+	}
+	@include breakpoint(mama-bear) {
+		height: 535px;
+		text-align: center;
+	}
+	@include breakpoint(baby-bear) {
+		h1, h2 {
+			text-align: center;
+		}	
+	}
+	.container {
+		margin-bottom: 5%;
+		margin-top: 5%;
+		h1, h2 {
+			background: $dark;
+			display: inline;
+		}
+		h2 {
+			display: inline-block;
+			line-height: 1.25em;
+			margin-top: 0.5em;
+		}
+		@include breakpoint(papa-bear) {
+			h1 {
+				font-size: 4em;
+				line-height: 1.5em;
+				padding: 0.2em;
+				box-shadow: 0.2em 0 0 $dark, -0.2em 0 0 $dark;
+			}
+			h2 {
+				font-size: 1.2em;
+				padding: 0.3em;
+				box-shadow: 0.5em 0 0 $dark, -0.5em 0 0 $dark;
+			}
+		}
+		@media (max-width: 1200px) {
+			margin-top: 120px;
+		}	    
+		@include breakpoint(mama-bear) {
+			margin-top: 150px;
+			h1 {
+				font-size: 2.5em;
+				line-height: 1.5em;
+				padding: 0.2em;
+				box-shadow: 0.2em 0 0 $dark, -0.2em 0 0 $dark;
+			}
+			h2 {
+				font-size: 1em;
+				padding: 0.5em;
+				box-shadow: 0.5em 0 0 $dark, -0.5em 0 0 $dark;
+			}
+		} 
+		@include breakpoint(baby-bear) {
+			margin-top: 75px;
+			h1 {
+				font-size: 2em;
+				line-height: 1.5em;
+				padding: 0.2em;
+				box-shadow: 0.2em 0 0 $dark, -0.2em 0 0 $dark;
+			}
+			h2 {
+				font-size: 1em;
+				line-height: 1.2em;
+				padding: 0.5em;
+				box-shadow: 0.5em 0 0 $dark, -0.5em 0 0 $dark;
+			}
+		}      	            	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+	}	
+}
+
+//button stuffs
+
+.btn-primary {
+	background-color: $accent;
+	border-color: #600;
+	font-family: 'AvenirNext-Regular';
+	font-variant: small-caps;
+}
+.btn-primary:hover {
+	background-color: #600;
+	border-color: #300;
+}
+.btn-lg {
+	border: none;
+}
+
+
+//sub-header
+.sub-header {
+	background-color: $mid;
+	color: $white;
+	margin-top: -30px;
+	padding: 20px;
+	h4 {
+		line-height: 1.4em;
+	}
+	@include breakpoint(baby-bear) {
+		text-align: center;
+	}
+	p {
+		margin-top: 1.5em;
+	}
+}
+
+.process {
+	padding: 15px;
+	h2 {
+		font-size: 2em;
+	}
+	img {
+		max-width: 10em;
+	}
+	p {
+		text-align: left;
+		padding: 0 15px 15px;
+	}
+	@include breakpoint(baby-bear) {
+		p {
+			text-align: center;
+		}
+	}
+	@include breakpoint(mama-bear) {
+		p {
+			text-align: center;
+		}
+	}	
+}
+.lighten {
+	@include breakpoint(baby-bear) {
+		background-color: $light;
+	}
+}
+
+//home content
+.home-content {
+	background-color: $dark;
+	margin-top: -30px;
+	padding-bottom: 35px;
+}	
+
+
+//twitter
+.blog-feed {
+	margin-top: 30px;
+	h3 {
+		margin-bottom: 10px;
+	}
+	@include breakpoint(baby-bear) {
+		max-width: 100%;
+		padding: 0 30px;
+		text-align: center;
+	}
+}	
+
+//contact form
+.contact-form {
+	background-color: $light;
+	margin-top: 30px;
+	padding: 0 30px 30px;
+	h3 {
+		margin-bottom: 20px;
+	}
+	h4 {
+		line-height: 1.4em;
+		margin-bottom: 15px;
+		a {
+			color: $white;
+			font-family: 'AvenirNext-Medium', helvetica, sans-serif;
+			font-size: 1em;
+			font-variant: small-caps;
+			margin-bottom: 30px;
+		}
+		a:hover {
+			color: $accent;
+		}
+	}
+	.contact-text {
+		margin-top: 22px;
+		padding-bottom: 25px;
+	}
+	label {
+		color: $white;
+		display: block;
+		font-family: 'AvenirNext-Regular';
+		text-align: left !important;
+	}
+	input {
+		height: 50px;
+	}
+	input, textarea {
+		border-radius: 0;
+	}
+	// .form-off-color {
+	// 	background-color: rgba(24,39,50,0.66);
+	// }
+	button {
+		background-color: $accent;
+		border-color: $accent;
+		color: $white;
+		font-family: 'AvenirNext-Medium';
+		margin-top: 15px;
+	}
+	@include breakpoint(baby-bear) {
+		padding: 30px 30px 60px;
+		text-align: center;
+	}
+}
+.form-control {
+	background-color: $mid;
+	border-color: $dark;
+	color: $white;
+}
+
+//footer
+footer {
+	background-color: $mid;	
+	color: $white;
+	height: 50px;
+	ul {
+		margin-top: 15px;
+		padding-left: 0;
+		li {
+			border-right: 1px solid $light;
+			display: inline;
+			list-style-type: none;
+			padding: 0 15px;
+			a {
+				color: $white;
+				font-family: AvenirNext-Regular, helvetica, sans-serif;
+			}
+			a:hover {
+				color: $accent;
+			}
+		}
+		li:last-of-type {
+			border-right: none !important;
+		}	
+	}	
+}
+
+
+//work page
+.work-header {
+		background: url(../img/darkprint.jpg) no-repeat top left;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-color: $dark;
+		background-size: 100% auto;
+	h1 {
+		background: $dark;
+		display: block;		
+	}
+	@include breakpoint(papa-bear) {
+		padding: 100px 0 50px;
+		h1 {
+			box-shadow: 0.2em 0 0 $dark, -0.2em 0 0 $dark;
+			font-size: 4em !important;
+			line-height: 1.25em;
+			padding: 0.2em;
+		}
+	}	
+	@include breakpoint(mama-bear) {
+		h1 {
+			box-shadow: 0.2em 0 0 $dark, -0.2em 0 0 $dark;
+			font-size: 3em !important;
+			line-height: 1.25em;
+			padding: 0.2em;
+		}
+	}
+	@include breakpoint(baby-bear) {
+		padding: 50px 20px 0;
+		h1 {
+			box-shadow: 0.2em 0 0 $dark, -0.2em 0 0 $dark;
+			font-size: 2.5em !important;
+			line-height: 1.25em;
+			padding: 0.2em;
+		}
+	}
+}
+.work-content {
+	background-color: $dark;
+	color: $white;
+	.affix {
+		width: 263px;
+		top: 30px;
+	}
+	.list-group {
+		line-height: 0.7em;
+		padding: 50px 0 0;
+		@include breakpoint(uncle-bear) {
+			display: none;
+		}	
+		.list-group-item {
+			transition: background-color 1s ease;
+			background-color: $dark;
+			border: none;
+			color: $white;
+			font-family: AvenirNext-Light;
+			font-size: 1.2em;
+		}
+		.list-group-item:hover {
+			background-color: #600;
+		}
+		.list-group-item:first-child {
+			border-top-right-radius: 0; 
+			border-top-left-radius: 0; 
+		}
+		.list-group-item:last-child {
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+		.active {
+			background-color: $accent;
+			border: none;
+		}
+	}
+	.work-nav {
+		min-height: 500px;
+	}
+	.work-link {
+		background-color: $mid;
+		padding: 0;
+	}
+	.work-item {
+		border-bottom: 1px solid $dark;
+		.work-description {
+			background-color: $white;
+			color: $dark;
+			padding: 37px 60px 45px;
+			h2 {
+				color: $dark;
+				font-size: 2em;
+			}
+			p {
+				color: $dark;
+				font-size: 1.25em;
+				line-height: 1.45em;
+				margin-top: 30px;
+			}
+			h5 {
+				color: $mid;
+			}
+			a {
+				h5 {
+					color: $accent;
+					font-family: AvenirNext-Medium;
+					margin-top: 20px;
+				}
+			}
+			a:hover {
+				text-decoration: none !important;
+				h5 {
+					color: #300;
+				}
+			}
+		}
+		.work-image {
+			background-color: $dark;
+			a {
+				img {
+					vertical-align: top;
+					width: 100%;
+				}
+			}
+		}	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

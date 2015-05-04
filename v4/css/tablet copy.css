@@ -1,0 +1,394 @@
+
+
+html {
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	
+}
+
+a, h1, h2 {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #9d4050;
+}
+
+h4, h5 {
+	color: #864a12;
+}
+
+h4 {
+	font-family: 'Nexa-Book-Italic';
+	font-size: 1em;
+}
+
+h5 {
+	font-family: 'Nexa-Bold';
+	font-size: 1.4em;
+}
+
+p {
+	color: #864a12;
+	font-family: 'NexaRegular';
+	line-height: 1.6em;
+	font-size: 1.0em;
+}
+
+body {
+    color: #000; /* Foreground color used for text */
+    font-family: Helvetica;
+    font-size: 100%;
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+    margin: 0; /* Amount of negative space around the outside of the body */
+    padding: 0; /* Amount of negative space around the inside of the body */
+}
+
+#page {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/* header */
+
+#masthead {
+	width: 100%;
+	height: 500px; /* 444px / 1739px the height of psd */
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	background: url(../img/lab.png) top center no-repeat;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+}
+
+#masthead h2 {
+	margin-top: 0.6em;
+	font-size: 2.3em;
+	font-family: 'NexaRegular';
+}
+
+#masthead h1 {
+	font-size: 9em;
+	font-family: 'Nexa-XBold-Italic';
+	letter-spacing: -0.061em;
+}
+
+.title {
+	height: 72%;
+	margin: 0;
+	padding: 20px 0 0 0;
+	position: relative;
+	top: 0;
+	background: url(../img/arm.png) no-repeat 50% 100%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: 8%;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 6em;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	color: #fff;	
+}
+
+nav ul {
+	width: 90%;
+	height: 1.9em;
+	margin: 1.1em 2.6em 0 2.6em;
+}
+
+nav ul {
+	color: #9d4050;
+}
+
+nav ul li {
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 5.5em;
+}
+
+a.index {
+	background: url(../img/rocket.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.3em 0 0 0;
+}
+
+a.index:hover {
+	background: url(../img/red_rocket.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.3em 0 0 0;
+}
+
+a.work {
+	background: url(../img/box.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.work:hover {
+	background: url(../img/red_box.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.about {
+	background: url(../img/robot.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.about:hover {
+	background: url(../img/red_robot.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+		padding: 4.0em 0 0 0;
+}
+
+a.contact {
+	background: url(../img/tower.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: auto 3.4em;
+		padding: 4em 0 0 0;
+}
+
+a.contact:hover {
+	background: url(../img/red_tower.png) no-repeat 50% 0%;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: auto 3.4em;
+		padding: 4em 0 0 0;                               
+}
+
+
+
+nav ul li a {
+	font-family: 'Nexa-Xbold';
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+/* oh hello there */
+
+#hello {
+	padding: 4.857em 10% 16% 10%;
+	height: auto;
+	width: 80%;
+	background-image: linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -o-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -moz-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -webkit-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+	background-image: -ms-linear-gradient(bottom, rgb(234,225,217) 0%, rgb(250,247,245) 33%, rgb(255,255,255) 89%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(234,225,217)),
+		color-stop(0.33, rgb(250,247,245)),
+		color-stop(0.89, rgb(255,255,255))
+	);	
+}
+
+#photo { 
+	display: inline;
+	float: left;
+	width: 15em;
+	margin: 0 2.3em 0 0;
+	padding: 15.5em 0 0 0;
+	background: url(../img/photo.png)no-repeat 50% 0;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: 14em auto;
+}
+
+.figcaption {
+	font-family: "Nexa-Book-Italic";
+	font-size: 1.1em;
+	color: #864a12;
+	line-height: 1.3em;
+	text-align: center;
+}
+
+#solve p {
+	font-size: 1.3em;
+}
+
+#hello h3 {
+	font-family: 'Nexa-Bold';
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	color: #864a12;
+}
+
+#hello p {
+	margin-bottom: 2em;
+}
+
+#hello ul {
+	width: 100%;
+}
+
+#hello ul li {
+	float: left;
+	width: 7em;
+	height: 1.5em;
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+
+#hello ul li a {
+	font-family: 'Nexa-Bold';
+	margin: 0 0 0 0;
+	padding-left: 3em;
+	line-height: 1.7em;
+	font-size: 1em;
+	color: #864a12;
+	text-transform: uppercase;
+}
+
+#hello ul li.Twitter a {
+	padding-left: 2.5em;
+}
+
+#hello ul li.email {
+	background: url(../img/email.png) center left no-repeat;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+}
+
+#hello ul li.Twitter {
+	background: url(../img/tweet.png) center left no-repeat;
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: contain;
+}
+
+/* latest */
+
+#home_latest {
+	padding: 10% 10% 12% 10%;
+	height: auto;
+	width: 80%;
+	background-color: white;
+}
+
+#home_latest.odd {
+	background-color: #f8f5f2;
+}
+
+#home_latest h4 {
+	margin-bottom: 6%;
+}
+
+#home_latest img {
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	margin-bottom: 10%;
+}
+
+#home_latest h5 {
+	margin-bottom: 5%;
+}
+
+#home_latest p {
+	margin-bottom: 6%;
+}
+
+button {
+	font-family: "Nexa-Bold";
+	text-transform: uppercase;
+	color: white;
+	border: none;
+	background: #864a12;
+	padding: 1em;
+	margin: 0;
+	width: auto;
+	overflow: visible;					
+	text-align: center;	
+	white-space: nowrap;
+	font-size: 0.75em;	
+	height: 3em;
+	width: auto;
+	line-height: 1.35em;			
+	}
+	
+button:hover {
+	background: #999999;
+	cursor: pointer;
+}	
+
+/* footer */
+
+#footer {
+	background-color: #d1b8a2;
+	padding: 8% 10% 10% 10%;
+}
+
+
+#footer ul {
+	font-family: 'Nexa-Bold';
+	margin: 0 0 0 0;
+	padding: 0;
+	line-height: 4em;
+	font-size: 1em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#footer ul li {
+	border-bottom: 1px solid #864a12;
+	border-top: 1px solid white;
+	width: 100%;
+}
+
+#footer ul li.top {
+	border-top: none;
+}
+
+#footer ul li.bottom {
+	border-bottom: none;
+}
+
+
+
+
+
